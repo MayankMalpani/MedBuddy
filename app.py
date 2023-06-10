@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-def predict(values):
+def predict(values): 
     if len(values) == 8:
         model = pickle.load(open('models/model_dia.pkl','rb'))
         values = np.asarray(values)
